@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="sign-in">
+                <h1>Welcome to Acme.</h1>
+                <h6>Create your account by filling the form bellow</h6>
+                    <form class="validation">
+                        <div>
+                            <label for="email" class="email-form">Email</label></br>
+                            <input type="text" id="e-mail" placeholder="e-mail">
+                        </div>
+                        <div>
+                            <label for="passwd" class="pwd-form">Password</label></br>
+                            <div class="pwd-div"><input type="password" id="passwd">
+                                <button class="pwd-show-hide" type="button">
+                                    <picture class="eye">
+                                        <source srcset="./assets/fa-eye@2x.png 2x">
+                                        <source srcset="./assets/fa-eye@3x.png 3x">
+                                        <img src="./assets/fa-eye.png" alt="logo">
+                                    </picture>
+                                </button>
+                            <div class="passwdlight">
+                                <div id="pwd-1">•</div>
+                                <div id="pwd-2">•</div>
+                                <div id="pwd-3">•</div>
+                                <div id="pwd-4">•</div>
+
+                            </div></div><br>
+                        </div>
+                            <h5 class="h5-element"><span><span id="dot" class="unclicked"></span><input type="checkbox" class="checkbox"></span><span>Remember me.</span></h5>
+                        <div class="buttons">
+                            <input id="sign-up" type="submit" value="Sign up">
+                        </div>
+                    </form>
+                    
+            </div>
+        
+            <div class="left-footer">
+                <p>© 2015 Acme, Inc.</p>
+                <button>Terms</button>
+                <button>Privacy</button>
+                <button>•••</button>
+            </div>
+        
+        </div>
+        
+        <div class="right">
+            <div class="right-content">
+                <div>
+                    <picture>
+                        <source srcset="./assets/acme@2x.png 2x">
+                        <source srcset="./assets/acme@3x.png 3x">
+                        <img src="./assets/acme.png" alt="logo">
+                    </picture>
+                </div>
+                <h2>Do you already have an account?</h2>
+                <h4>Thats awesome, you can login by clicking on the button bellow. To skip this next time, you can ask us to remember your login credentials.</h4>
+                <div>
+                    <button id="login">Log in</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    
+                </div>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
